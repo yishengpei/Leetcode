@@ -9,8 +9,7 @@ class Solution:
     def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
         left, right = 0, 0
         window_product = 1
-        count = 0
-
+        count = 0 
         while right < len(nums):
             window_product *= nums[right]
             right += 1
